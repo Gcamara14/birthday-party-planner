@@ -9,7 +9,7 @@ A lightweight planning hub for CayCay's 25th birthday boat party in San Francisc
 | **Occasion** | CayCay's 25th birthday |
 | **Date** | Saturday, October 3, 2026 |
 | **Cruise** | 12:00–2:00 PM |
-| **Guest meetup** | 11:30 AM |
+| **Proposed guest meetup** | 11:30 AM, pending Aaron's confirmation |
 | **Departure** | 272 Jefferson Street, Fisherman's Wharf, San Francisco |
 | **Capacity** | 55 aboard; 50-person guest-list limit |
 | **Guest contribution** | $20 suggested |
@@ -73,5 +73,51 @@ The plan is ready when the boat rules are confirmed, guests have accurate arriva
 
 ## Repository status
 
-This repository currently contains the planning PRD. The dashboard described in the PRD is a future phase.
+The project provides a responsive application shell, structured event data, accessible navigation, dashboard overview, master task board, planning timeline, boat-question tracker, people and roles view, food and drinks planner, party-experience planner, logistics planner, Partiful message builder, shopping and packing checklist, focused Party Day mode, final-readiness tracker, and GitHub Pages deployment workflow. Later planning sections remain intentional placeholders.
 
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+Run `npm run check` for TypeScript validation and `npm run build` for a production build.
+
+Run the complete local verification before committing:
+
+```bash
+npm test
+npm run check
+npm run build
+```
+
+Planning changes are stored in browser `localStorage`. They persist across refreshes in the same browser and device, but they are not synced between phones or accounts and are not written back to the Markdown file.
+
+## Deploying to GitHub Pages
+
+1. Push the project to the `main` branch on GitHub.
+2. Open the repository's **Settings → Pages**.
+3. Under **Build and deployment**, select **GitHub Actions** as the source.
+4. The included `.github/workflows/deploy-pages.yml` workflow installs dependencies, builds the Vite site, and publishes `dist/`.
+5. Confirm the completed deployment in the repository's **Actions** tab.
+
+The Vite base path is configured for the `birthday-party-planner` repository. If the GitHub repository is renamed, update `base` in `vite.config.ts`. This is a client-side application with no authentication layer; verify the deployed Pages visibility before entering information you consider sensitive.
+
+## Updating event data safely
+
+The Markdown master plan remains the source of truth. When details change, update it first and then mirror the relevant structured values in:
+
+- `src/data/event.ts` — event facts, schedule, location, attendance, and cost
+- `src/data/tasks.ts` — parsing, grouping, and metadata rules for every actionable master-plan item; task titles are loaded directly from the Markdown source
+- `src/data/navigation.ts` — available and future dashboard sections
+- `src/data/people.ts` — confirmed host responsibilities, proposed helper roles, and unassigned operational roles
+- `src/data/foodPlan.ts` — editable quantity fields, shopping items, and boat-rule dependencies
+- `src/data/experience.ts` — birthday moment, music readiness, and optional activity ideas
+- `src/data/logistics.ts` — proposed arrival flow, transportation fields, and supply transport items
+- `src/data/shopping.ts` — categorized master shopping list and boat-rule dependencies
+- `src/data/readiness.ts` — weather checkpoints and the 16 Definition of Done conditions
+
+Shared TypeScript interfaces live in `src/types/event.ts`. Presentation components should consume these modules rather than embedding new event facts directly in the UI.
+
+Task IDs are derived from section, subsection, and task title rather than Markdown line numbers. Adding surrounding prose will not invalidate saved statuses. Renaming an existing checklist item creates a new task identity, so avoid changing task wording merely for formatting.
