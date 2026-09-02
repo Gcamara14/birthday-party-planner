@@ -11,7 +11,7 @@ export interface FoodPlanField {
 
 export const foodPlanFields: FoodPlanField[] = [
   { id: 'expected-guests', label: 'Expected guest count', type: 'number', placeholder: 'Enter count', note: 'Current snapshot: 38 Going + 11 Maybe' },
-  { id: 'pizzas', label: 'Costco pizzas', type: 'number', placeholder: 'Enter quantity', unit: 'pizzas', note: 'Calculate after attendance is clearer', shoppingItem: 'Costco pizzas' },
+  { id: 'pizzas', label: 'Costco pizzas', type: 'number', placeholder: 'Enter quantity', unit: 'pizzas', note: 'Current plan: four; revisit only if attendance changes materially', shoppingItem: 'Costco pizzas' },
   { id: 'beer', label: 'Beer', type: 'text', placeholder: 'Enter quantity / format', blocker: 'alcohol', shoppingItem: 'Beer' },
   { id: 'prosecco', label: 'Prosecco', type: 'text', placeholder: 'Enter quantity / format', blocker: 'alcohol', shoppingItem: 'Prosecco' },
   { id: 'water', label: 'Water', type: 'text', placeholder: 'Enter quantity / format', shoppingItem: 'Water' },

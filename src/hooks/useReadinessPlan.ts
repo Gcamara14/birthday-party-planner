@@ -6,11 +6,12 @@ interface ReadinessPlan {
   weatherNotes: Record<string, string>
 }
 
-const storageKey = 'caycay-party-readiness'
-const emptyPlan: ReadinessPlan = { complete: {}, weatherNotes: {} }
+const storageKey = 'caycay-party-readiness-v2'
+const emptyPlan: ReadinessPlan = { complete: { 'aaron-rules': true }, weatherNotes: {} }
 
 function loadPlan(): ReadinessPlan {
-  return { ...emptyPlan, ...loadLocal<ReadinessPlan>(storageKey, emptyPlan) }
+  const stored = loadLocal<ReadinessPlan>(storageKey, emptyPlan)
+  return { ...emptyPlan, ...stored, complete: { ...emptyPlan.complete, ...stored.complete }, weatherNotes: { ...emptyPlan.weatherNotes, ...stored.weatherNotes } }
 }
 
 export function useReadinessPlan() {

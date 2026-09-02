@@ -22,7 +22,18 @@ export function LogisticsPage() {
             </li>
           ))}
         </ol>
-        <aside className="boarding-warning"><strong>11:45 AM is not confirmed</strong><p>It remains a working assumption until Aaron provides the actual boarding time.</p></aside>
+        <aside className="boarding-confirmed"><strong>11:45 AM is the operational deadline</strong><p>Guests should arrive ready to board. Do not plan around late-arrival accommodations.</p></aside>
+        <aside className="boarding-confirmed"><strong>Exact destination: Bass Tub · Berth #4</strong><p>276 Jefferson Street, Fisherman’s Wharf. Gio’s Pier 39 Garage plan is for the supply car; guest parking guidance still needs comparison.</p></aside>
+      </section>
+
+      <section className="supply-section" aria-labelledby="boat-layout-title">
+        <div className="logistics-section-heading"><div><p className="eyebrow">Working setup</p><h2 id="boat-layout-title">Where things go onboard</h2></div><span>Flexible, not an itinerary</span></div>
+        <ul className="transport-list">
+          <li><span><strong>Inside heated cabin</strong><small>Pizza on or around one dinette, cake storage, extra supplies, and jackets or bags where appropriate.</small></span></li>
+          <li><span><strong>Central outdoor area</strong><small>Drinks, onboard cooler, cups, and the main social area.</small></span></li>
+          <li><span><strong>Outdoor perimeter</strong><small>Views, photos, and casual hanging out around the bow and stern.</small></span></li>
+          <li><span><strong>Built-in stereo</strong><small>Bluetooth music plays throughout the boat.</small></span></li>
+        </ul>
       </section>
 
       <section className="logistics-plan-section" aria-labelledby="transport-plan-title">
@@ -36,7 +47,7 @@ export function LogisticsPage() {
             </label>
           ))}
         </div>
-        <label className="confirmation-check"><input type="checkbox" disabled={!boardingTime.trim()} checked={plan.confirmedBoarding && Boolean(boardingTime.trim())} onChange={(event) => setField('confirmedBoarding', event.target.checked)} /><span><strong>Aaron confirmed the boarding time above</strong><small>Enter a time before confirming it. This does not change the separate 11:45 working assumption shown in the source.</small></span></label>
+        <label className="confirmation-check"><input type="checkbox" disabled={!boardingTime.trim()} checked={plan.confirmedBoarding && Boolean(boardingTime.trim())} onChange={(event) => setField('confirmedBoarding', event.target.checked)} /><span><strong>Boarding-readiness time recorded</strong><small>The confirmed instruction is to arrive ready to board at 11:45 AM.</small></span></label>
       </section>
 
       <section className="supply-section" aria-labelledby="supply-title">
@@ -53,7 +64,7 @@ export function LogisticsPage() {
           <label><span>Day-of guest contact</span><input value={plan.dayOfGuestContact} placeholder="Unassigned" onChange={(event) => setField('dayOfGuestContact', event.target.value)} /></label>
           <label><span>After-party location</span><input value={plan.afterPartyLocation} placeholder="TBD" onChange={(event) => setField('afterPartyLocation', event.target.value)} /></label>
         </div>
-        <p className="transition-note">At the end of the cruise, transition guests toward the confirmed after-party location. Late-guest wording should be finalized after Aaron confirms departure procedures.</p>
+        <p className="transition-note">At the end of the cruise, transition guests toward the confirmed after-party location. Guests who miss the noon departure should go there rather than asking the hosts to delay the boat.</p>
       </section>
     </section>
   )

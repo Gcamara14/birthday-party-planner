@@ -6,11 +6,15 @@ interface CommunicationPlan {
   drafts: Record<string, string>
 }
 
-const storageKey = 'caycay-party-communications'
-const emptyPlan: CommunicationPlan = { details: {}, drafts: {} }
+const storageKey = 'caycay-party-communications-v3'
+const emptyPlan: CommunicationPlan = {
+  details: { 'food-byob': 'Outside food and BYOB are allowed. Hosts plan to provide pizza, beer, Prosecco, water, and non-alcoholic options.' },
+  drafts: {},
+}
 
 function loadPlan(): CommunicationPlan {
-  return { ...emptyPlan, ...loadLocal<CommunicationPlan>(storageKey, emptyPlan) }
+  const stored = loadLocal<CommunicationPlan>(storageKey, emptyPlan)
+  return { ...emptyPlan, ...stored, details: { ...emptyPlan.details, ...stored.details }, drafts: { ...emptyPlan.drafts, ...stored.drafts } }
 }
 
 export function useCommunicationPlan() {

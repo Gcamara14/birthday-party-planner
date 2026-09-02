@@ -24,8 +24,7 @@ export function PartyDayPage() {
         <section className="party-day-hero" aria-labelledby="party-day-title">
           <p className="eyebrow">Simple, calm, ready</p>
           <h1 id="party-day-title">Today's game plan</h1>
-          <dl><div><dt>Meetup plan</dt><dd>{eventDetails.meetupTime}*</dd></div><div><dt>Where</dt><dd>272 Jefferson Street</dd></div><div><dt>Cruise</dt><dd>{eventDetails.cruiseTime}</dd></div></dl>
-          <p className="party-day-pending">* Confirm the meetup and boarding flow with Aaron before party day.</p>
+          <dl><div><dt>Ready to board</dt><dd>{eventDetails.meetupTime}</dd></div><div><dt>Where</dt><dd>276 Jefferson · Berth #4</dd></div><div><dt>Cruise</dt><dd>{eventDetails.cruiseTime}</dd></div></dl>
           <div className="day-progress"><div><span style={{ width: `${Math.round((completed / allItems.length) * 100)}%` }} /></div><p><strong>{completed} of {allItems.length}</strong> ready</p></div>
         </section>
 

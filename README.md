@@ -9,13 +9,13 @@ A lightweight planning hub for CayCay's 25th birthday boat party in San Francisc
 | **Occasion** | CayCay's 25th birthday |
 | **Date** | Saturday, October 3, 2026 |
 | **Cruise** | 12:00–2:00 PM |
-| **Proposed guest meetup** | 11:30 AM, pending Aaron's confirmation |
-| **Departure** | 272 Jefferson Street, Fisherman's Wharf, San Francisco |
+| **Guest arrival / ready to board** | 11:45 AM |
+| **Departure** | Bass Tub, 276 Jefferson Street, Berth #4, Fisherman's Wharf, San Francisco |
 | **Capacity** | 55 aboard; 50-person guest-list limit |
 | **Guest contribution** | $20 suggested |
 | **Guest communication** | Partiful |
 
-Boarding time and boat policies are still pending confirmation from the captain. The master plan is the authoritative source for confirmed details and open questions.
+Aaron's core logistics are resolved. Guests should arrive ready to board at 11:45 AM; ice, unloading details, and candle use remain practical day-of checks. The master plan is the authoritative source for confirmed details and remaining decisions.
 
 ## Product vision
 
@@ -46,11 +46,11 @@ When a dashboard is implemented, this document should remain the canonical plann
 
 ## Current priorities
 
-- Confirm boarding, food and drink, amenities, decoration, and cleanup rules with the captain.
-- Review the master plan with CayCay.
-- Choose the early meetup and after-party locations.
+- Prepare the Partiful update using the resolved 11:45 arrival and boat rules.
 - Assign lightweight helper roles for guest coordination, the birthday moment, photos, setup, and cleanup.
-- Send one clear Partiful update once the critical details are confirmed.
+- Finalize the cake, food and drink quantities, simple decor, and playlist.
+- Choose the early meetup and after-party locations.
+- Confirm payment, guest parking/rideshare guidance, exact dock access, and unloading details. Gio's supply-car plan is Pier 39 Garage plus the folding cart.
 
 ## Task model
 

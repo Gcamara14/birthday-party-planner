@@ -3,7 +3,7 @@ import { eventDetails } from '../data/event'
 const snapshotItems = [
   { label: 'Date', value: eventDetails.date, detail: 'Birthday boat party', badge: 'Confirmed' },
   { label: 'Cruise', value: eventDetails.cruiseTime, detail: eventDetails.boat, badge: 'Confirmed' },
-  { label: 'Departure', value: '272 Jefferson Street', detail: "Fisherman's Wharf", badge: 'Confirmed' },
+  { label: 'Departure', value: '276 Jefferson Street', detail: "Berth #4 · Fisherman's Wharf", badge: 'Confirmed' },
   { label: 'Current RSVPs', value: `${eventDetails.rsvps.going} Going + ${eventDetails.rsvps.maybe} Maybe`, detail: 'Latest known Partiful count', badge: 'Snapshot' },
 ]
 
@@ -41,9 +41,9 @@ export function EventSnapshot() {
       <aside className="notice" aria-label="Important planning note">
         <span className="notice-icon" aria-hidden="true">!</span>
         <div>
-          <span className="pending-label">Pending</span>
-          <strong>Boarding details are not confirmed yet</strong>
-          <p>The 11:30 AM guest meetup is the proposed plan. Wait for Aaron's boarding answers before sending the main Partiful update.</p>
+          <span className="confirmed-label">Resolved</span>
+          <strong>Guests should arrive ready to board at 11:45 AM</strong>
+          <p>Aaron logistics no longer block planning. Ice, unloading, and candle use remain day-of checks.</p>
         </div>
       </aside>
     </section>

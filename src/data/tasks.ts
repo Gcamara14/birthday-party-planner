@@ -7,6 +7,7 @@ interface SourceTask {
   section: string
   subsection: string
   sourceLine: number
+  checked: boolean
 }
 
 const GROUP_NAMES: Record<string, string> = {
@@ -49,22 +50,22 @@ function parseSourceTasks(markdown: string): SourceTask[] {
       continue
     }
 
-    const checkbox = line.match(/^\s*-\s+\[ \]\s+(.+)$/)
+    const checkbox = line.match(/^\s*-\s+\[([ xX])\]\s+(.+)$/)
     if (!checkbox) continue
 
-    const titleParts = [checkbox[1]]
+    const titleParts = [checkbox[2]]
     const details: string[] = []
     let cursor = index + 1
     while (cursor < lines.length && lines[cursor].trim() !== '') {
       const continuation = lines[cursor]
-      if (/^\s*-\s+\[ \]/.test(continuation) || /^#{1,3}\s+/.test(continuation) || /^-{5,}$/.test(continuation.trim())) break
+      if (/^\s*-\s+\[[ xX]\]/.test(continuation) || /^#{1,3}\s+/.test(continuation) || /^-{5,}$/.test(continuation.trim())) break
       if (/^\s+-\s+/.test(continuation)) details.push(cleanMarkdown(continuation.replace(/^\s+-\s+/, '')))
       else if (/^\s{2,}\S/.test(continuation)) titleParts.push(continuation.trim())
       else break
       cursor += 1
     }
 
-    tasks.push({ title: cleanMarkdown(titleParts.join(' ')), details, section, subsection, sourceLine: index + 1 })
+    tasks.push({ title: cleanMarkdown(titleParts.join(' ')), details, section, subsection, sourceLine: index + 1, checked: checkbox[1].toLowerCase() === 'x' })
   }
   return tasks
 }
@@ -72,15 +73,15 @@ function parseSourceTasks(markdown: string): SourceTask[] {
 // The PRD contains two prose TODOs and seven escaped inline checkboxes that are
 // not valid Markdown list items. Keep them traceable here until the PRD is reformatted.
 const inlineSourceTasks: SourceTask[] = [
-  { title: 'Choose nearby pre-boat spot', details: [], section: '2. Guest Arrival Plan', subsection: 'Proposed Plan - Pending Aaron Confirmation', sourceLine: 74 },
-  { title: 'Finalize late-guest wording after Aaron confirms boarding/departure procedures', details: [], section: '2. Guest Arrival Plan', subsection: 'Late Guests', sourceLine: 93 },
-  { title: 'Choose Sam or Kira as primary informal MC', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 255 },
-  { title: 'Choose backup MC', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 255 },
-  { title: 'Choose day-of guest contact', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 256 },
-  { title: 'Choose cake owner', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 257 },
-  { title: 'Choose photo/video lead(s)', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 257 },
-  { title: 'Choose supply/setup helpers', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 258 },
-  { title: 'Choose cleanup helpers', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 258 },
+  { title: 'Choose nearby pre-boat spot', details: [], section: '2. Guest Arrival Plan', subsection: 'Arrival Plan', sourceLine: 74, checked: false },
+  { title: 'Finalize late-guest wording', details: [], section: '2. Guest Arrival Plan', subsection: 'Late Guests', sourceLine: 93, checked: false },
+  { title: 'Choose Sam or Kira as primary informal MC', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 255, checked: false },
+  { title: 'Choose backup MC', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 255, checked: false },
+  { title: 'Choose day-of guest contact', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 256, checked: false },
+  { title: 'Choose cake owner', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 257, checked: false },
+  { title: 'Choose photo/video lead(s)', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 257, checked: false },
+  { title: 'Choose supply/setup helpers', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 258, checked: false },
+  { title: 'Choose cleanup helpers', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 258, checked: false },
 ]
 
 function getTimeframe(task: SourceTask): string | undefined {
@@ -133,8 +134,9 @@ function getDependency(task: SourceTask): string | undefined {
 }
 
 function initialStatus(task: SourceTask, dependency?: string): TaskStatus {
-  if (task.title.startsWith('Send one clean Partiful update')) return 'Waiting'
-  if (dependency && !task.section.startsWith('4.')) return 'Waiting'
+  if (task.checked) return 'Done'
+  if (task.title.startsWith('Send one clean Partiful update')) return 'In Progress'
+  if (dependency && !task.section.startsWith('4.') && !task.section.startsWith('17.') && !task.section.startsWith('20.')) return 'Waiting'
   return 'Not Started'
 }
 

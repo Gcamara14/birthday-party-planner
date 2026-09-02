@@ -9,7 +9,9 @@ import { useTaskStatuses } from '../hooks/useTaskStatuses'
 export function OverviewPage() {
   const countdown = useCountdown(eventDetails.dateTime)
   const { statusFor } = useTaskStatuses()
-  const nextActions = allTasks.filter((task) => task.isNextAction && statusFor(task) !== 'Done').slice(0, 4)
+  const priorityOrder = { Critical: 0, High: 1, Normal: 2, 'Nice-to-have': 3 }
+  const statusOrder = { 'In Progress': 0, 'Not Started': 1, Waiting: 2, Done: 3 }
+  const nextActions = allTasks.filter((task) => task.isNextAction && statusFor(task) !== 'Done').sort((a, b) => statusOrder[statusFor(a)] - statusOrder[statusFor(b)] || priorityOrder[a.priority] - priorityOrder[b.priority] || a.sourceLine - b.sourceLine).slice(0, 4)
   const bestAction = nextActions[0]
   const allBlocked = allTasks.filter((task) => statusFor(task) === 'Waiting')
   const blocked = allBlocked.slice(0, 3)

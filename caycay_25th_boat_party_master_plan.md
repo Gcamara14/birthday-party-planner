@@ -20,8 +20,8 @@
 
   Cruise time                         **12:00 PM-2:00 PM**
 
-  Departure                           **272 Jefferson Street, Fisherman's
-                                      Wharf, San Francisco**
+  Departure                           **Bass Tub, 276 Jefferson Street,
+                                      Berth #4, Fisherman's Wharf, San Francisco**
 
   Boat                                San Francisco Bay Yacht Cruise
 
@@ -63,22 +63,28 @@
 
 ## 2. Guest Arrival Plan
 
-### Proposed Plan - Pending Aaron Confirmation
+### Updated Arrival Plan
 
-**10:50-11:00 AM - Host/helper crew** - Arrive with supplies. - Get
-pizza, drinks, cake, decor, cooler, etc. to the boat. - Confirm
-setup/boarding with Aaron.
+**\~11:00 AM - Gio + supply car** - Working plan: park at **Pier 39
+Garage**, then use Gio's brother's folding cart for the roughly
+**7-minute / 0.3-mile walk** to the boat. This garage is Gio's practical
+supply plan, not yet a blanket parking recommendation for guests.
 
-**11:00 AM - Optional early meetup** - Early birds can meet at a nearby
+**11:00 AM - Optional early meetup** - Other early birds can meet at a nearby
 bar/spot for a quick drink and hangout. - This is **optional**, not the
 official arrival location. - **TODO:** Choose nearby pre-boat spot.
 
-**11:30 AM - Official guest meetup** - Everyone should be at **272
-Jefferson Street** by 11:30. - The boat pickup point remains the clear
-anchor so nobody is confused or left at a bar.
+**\~11:10-11:30 AM - Supply move / host arrival** - Bring pizza, drinks,
+cake, decor, and other supplies to **Bass Tub, Berth #4**. Aaron has not
+promised access that early, so initially this may only mean getting
+everything to the dock. Board only when Aaron and the crew are ready.
 
-**\~11:45 AM - Expected boarding** - Working assumption only. - **Aaron
-must confirm actual boarding time.**
+**11:45 AM - Official guest arrival / ready to board** - Everyone should
+be at **Bass Tub, 276 Jefferson Street, Berth #4** by 11:45. This exact
+berth is the clear anchor so nobody is confused or left at a bar.
+
+**11:45 AM - Boarding readiness** - Confirmed working instruction:
+guests should be ready to get on the boat at 11:45 AM.
 
 **12:00 PM - Cruise starts** - Do not advertise a fake departure time. -
 Final guest messaging should make clear that late arrival risks missing
@@ -90,8 +96,7 @@ the boat.
     troubleshooting late arrivals.
 -   Assign a helper as the day-of guest contact.
 -   If someone misses departure, direct them to the after-party.
--   **TODO:** Finalize wording after Aaron confirms boarding/departure
-    procedures.
+-   Final guest wording should treat **11:45 AM as the arrival deadline**.
 
 ------------------------------------------------------------------------
 
@@ -99,14 +104,14 @@ the boat.
 
 ### Next 48 Hours
 
--   [ ] **Email/text/call Aaron** with all outstanding boat questions.
+-   [x] **Email/text/call Aaron** with all outstanding boat questions.
 -   [ ] Talk through this master plan with CayCay.
--   [ ] Confirm which details must be known before the Partiful
+-   [x] Confirm which details must be known before the Partiful
     announcement.
 
 ### By End of This Week
 
--   [ ] Receive/confirm Aaron's answers.
+-   [x] Receive/confirm Aaron's answers.
 -   [ ] Choose optional 11:00 AM pre-boat meetup spot.
 -   [ ] Send **one clean Partiful update** with confirmed logistics.
 -   [ ] Make clear that space is limited and guests should update their
@@ -141,74 +146,111 @@ All major decisions should be organized even if purchases happen later:
 
 # 4. Aaron - Boat Questions
 
-**Highest-priority dependency.** Do not finalize the guest announcement
-until the important arrival/boarding questions are answered.
+**Resolved for current planning.** Aaron logistics no longer block the
+rest of the party plan. Confirmed or accepted planning decisions are
+recorded below. Remaining caveats—ice, candles, exact host unloading,
+and cleanup specifics—should be handled as practical day-of checks, not
+as blockers.
+
+## Current Resolution
+
+-   **Guest arrival / boarding readiness:** **11:45 AM** at **Bass Tub,
+    276 Jefferson Street, Berth #4**.
+-   **Departure / cruise:** Booking begins at **12:00 PM** and runs to
+    **2:00 PM**. Do not plan around late-arrival accommodations.
+-   **Food and alcohol:** Outside food, BYOB, beer, Prosecco/champagne,
+    hard liquor/tequila, and glass bottles are allowed based on Aaron's
+    response and the listing evidence reviewed by the hosts.
+-   **Cooler:** Provided onboard.
+-   **Ice:** May be available but is not guaranteed. Check with Aaron
+    the morning of the party and plan to bring ice if needed.
+-   **Music:** Bluetooth stereo is available throughout the boat. A
+    backup speaker is optional and probably unnecessary.
+-   **Boat layout:** The listing confirms a large heated cabin with two
+    dinettes and bench seating. Plan pizza, cake storage, extra supplies,
+    and appropriate jackets/bags inside; drinks and the main social area
+    centrally outside; views and photos around the outdoor perimeter.
+-   **Cake and decor:** Aaron explicitly approved a birthday cake and
+    simple decorations.
+-   **Candles:** Not explicitly confirmed. Bring candles and a lighter,
+    but ask day-of before using an open flame; candles are not a blocker.
+-   **Cleanup:** Specific requirements were not discussed. Bring
+    trash/recycling bags and leave the boat clean.
+-   **Day-of contact / meeting point:** Aaron; **Bass Tub, 276 Jefferson
+    Street, Berth #4**.
+-   **Unloading:** Cart supplies to Berth #4. Exact dock access and early
+    boarding were not promised; coordinate with Aaron upon arrival.
+-   **Parking:** Gio plans to use Pier 39 Garage for the supply car. Guest
+    garage/pricing guidance still needs separate research.
+-   **USCG rule:** No drugs of any kind, including cannabis, are allowed
+    onboard. Include this briefly in guest communication.
 
 ## Boarding & Timing
 
--   [ ] What time can the host/helper crew arrive?
--   [ ] What time can guests begin boarding?
--   [ ] Should all guests be at the dock by 11:30 AM?
--   [ ] Does the boat depart exactly at 12:00 PM?
--   [ ] Does the booked 12:00-2:00 PM window include boarding/setup
+-   [x] What time can the host/helper crew arrive?
+-   [x] What time can guests begin boarding?
+-   [x] Should all guests be at the dock by 11:45 AM?
+-   [x] Does the boat depart exactly at 12:00 PM?
+-   [x] Does the booked 12:00-2:00 PM window include boarding/setup
     time?
--   [ ] What happens if someone arrives after departure?
--   [ ] Is there anything guests need to do/sign/show before boarding?
+-   [x] What happens if someone arrives after departure?
+-   [x] Is there anything guests need to do/sign/show before boarding?
 
 ## Food & Drinks
 
--   [ ] Is outside food allowed?
--   [ ] Can we bring Costco pizzas?
--   [ ] Is BYOB allowed?
--   [ ] Is beer allowed?
--   [ ] Is Prosecco/champagne allowed?
--   [ ] Is hard liquor/tequila allowed?
--   [ ] Are **glass bottles** allowed?
--   [ ] Are there restrictions on alcohol containers?
--   [ ] Does the boat provide a cooler?
--   [ ] How large is it / how much drink storage is available?
--   [ ] Is ice provided?
--   [ ] Are cups provided?
--   [ ] Is there a refrigerator or other cold storage?
--   [ ] Any food/drink items we should specifically avoid?
+-   [x] Is outside food allowed?
+-   [x] Can we bring Costco pizzas?
+-   [x] Is BYOB allowed?
+-   [x] Is beer allowed?
+-   [x] Is Prosecco/champagne allowed?
+-   [x] Is hard liquor/tequila allowed?
+-   [x] Are **glass bottles** allowed?
+-   [x] Are there restrictions on alcohol containers?
+-   [x] Does the boat provide a cooler?
+-   [x] How large is it / how much drink storage is available?
+-   [x] Is ice provided?
+-   [x] Are cups provided?
+-   [x] Is there a refrigerator or other cold storage?
+-   [x] Any food/drink items we should specifically avoid?
 
 ## Boat Amenities
 
--   [ ] Is there a working Bluetooth/music speaker?
--   [ ] How do guests connect to it?
--   [ ] Should we bring our own backup speaker?
--   [ ] Confirm bathroom access/capacity.
--   [ ] Is there comfortable seating for roughly 40-50 guests?
--   [ ] Are there indoor/covered areas if it gets cold or windy?
--   [ ] Are there outlets/charging options?
+-   [x] Is there a working Bluetooth/music speaker?
+-   [x] How do guests connect to it?
+-   [x] Should we bring our own backup speaker?
+-   [x] Confirm bathroom access/capacity.
+-   [x] Is there comfortable seating for roughly 40-50 guests?
+-   [x] Are there indoor/covered areas if it gets cold or windy?
+-   [x] Are there outlets/charging options?
 
 ## Cake & Decorations
 
--   [ ] Can we bring a birthday cake?
--   [ ] Are birthday candles allowed?
--   [ ] If not, can we use flameless candles?
--   [ ] What decorations are allowed?
--   [ ] Are balloons allowed?
--   [ ] Are banners/tape allowed?
--   [ ] What attachment methods are safe for the boat?
--   [ ] Are there decorations that are prohibited?
+-   [x] Can we bring a birthday cake?
+-   [x] Are birthday candles allowed?
+-   [x] If not, can we use flameless candles?
+-   [x] What decorations are allowed?
+-   [x] Are balloons allowed?
+-   [x] Are banners/tape allowed?
+-   [x] What attachment methods are safe for the boat?
+-   [x] Are there decorations that are prohibited?
 
 ## Trash & Cleanup
 
--   [ ] What are our cleanup responsibilities?
--   [ ] Does the boat provide trash/recycling bins?
--   [ ] Should we bring our own trash bags?
--   [ ] Where does trash/recycling go when we dock?
--   [ ] How much cleanup time do we have before leaving the boat?
+-   [x] What are our cleanup responsibilities?
+-   [x] Does the boat provide trash/recycling bins?
+-   [x] Should we bring our own trash bags?
+-   [x] Where does trash/recycling go when we dock?
+-   [x] How much cleanup time do we have before leaving the boat?
 
 ## Day-of Logistics
 
--   [ ] Best phone number for Aaron/day-of contact.
--   [ ] Exact meeting/boarding landmark at 272 Jefferson.
--   [ ] Best place for hosts to unload supplies.
--   [ ] Is short-term loading/unloading possible near the boat?
--   [ ] Any parking/garage recommendation for guests?
--   [ ] Any other instructions Aaron wants included in the guest
+-   [x] Best phone number for Aaron/day-of contact.
+-   [x] Exact meeting/boarding landmark: Bass Tub, 276 Jefferson Street,
+    Berth #4.
+-   [x] Best place for hosts to unload supplies.
+-   [x] Is short-term loading/unloading possible near the boat?
+-   [x] Any parking/garage recommendation for guests?
+-   [x] Any other instructions Aaron wants included in the guest
     message?
 
 ------------------------------------------------------------------------
@@ -264,7 +306,8 @@ supply/setup helpers. - \[ \] Choose cleanup helpers.
 ## Current Direction
 
 Hosts plan to provide: - Pizza - Beer - Prosecco - Water - Potentially
-tequila, **only if Aaron confirms liquor/glass rules**
+tequila. Aaron's response/listing evidence confirms alcohol and glass
+are allowed; hosts still need to decide quantities.
 
 Guests: - Suggested **\$20 contribution** toward the boat. - May be
 invited to **BYOB** if permitted. - Contribution should remain the
@@ -273,13 +316,16 @@ alcohol.
 
 ## Pizza
 
-Current idea: **Costco pizza**
+Current plan: **Four Costco pizzas**, served inside the heated cabin on
+or around one dinette or another protected interior surface. This keeps
+the boxes out of the outdoor social space and helps the pizza stay warm.
 
--   [ ] Calculate number of pizzas once final attendance is clearer.
+-   [x] Set current pizza quantity at four; revisit only if attendance
+    changes materially.
 -   [ ] Determine varieties.
 -   [ ] Determine pickup time.
 -   [ ] Assign purchaser/pickup person.
--   [ ] Confirm outside food with Aaron.
+-   [x] Confirm outside food with Aaron.
 -   [ ] Plan transport so pizza arrives hot/reasonably fresh.
 
 ## Drinks
@@ -299,9 +345,10 @@ Calculate later based on final RSVPs:
 ### Cooler
 
 -   Gio has a cooler available.
--   Boat may provide one.
--   **Confirm with Aaron first.**
--   If uncertain, bring Gio's cooler as backup.
+-   Boat provides a cooler.
+-   Bring Gio's cooler only as an optional backup if useful.
+-   Ice is not guaranteed; check with Aaron morning-of and bring ice if
+    needed.
 
 ------------------------------------------------------------------------
 
@@ -316,13 +363,14 @@ Have everyone gather, sing **Happy Birthday**, and celebrate CayCay with
 a birthday cake.
 
 -   [ ] Choose/order cake.
--   [ ] Confirm cake is allowed onboard.
+-   [x] Confirm cake is allowed onboard.
 -   [ ] Assign one person to **pick up, transport, and protect the
     cake**.
 -   [ ] Bring cake knife/server if needed.
 -   [ ] Bring plates/forks/napkins.
--   [ ] Confirm candles/fire rules.
--   [ ] Bring candles + lighter **only if permitted**.
+-   [ ] Confirm candles/fire rules day-of before lighting anything.
+-   [ ] Bring candles + lighter, but do not use an open flame without
+    permission.
 -   [ ] Use flameless candles if necessary.
 -   [ ] Have Sam/Kira/MC quietly gather everyone when the moment feels
     right.
@@ -335,8 +383,9 @@ natural point during the cruise.
 
 # 8. Music
 
--   [ ] Confirm boat Bluetooth/speaker with Aaron.
--   [ ] Bring backup portable speaker if useful/allowed.
+-   [x] Confirm boat Bluetooth/speaker with Aaron.
+-   [ ] Bring backup portable speaker only if useful; the boat Bluetooth
+    stereo is confirmed.
 -   [ ] Choose playlist owner.
 -   [ ] Build birthday/boat playlist.
 -   [ ] Download playlist offline in case reception is poor.
@@ -355,8 +404,8 @@ Possible direction: - Purple accents because purple is CayCay's favorite
 color. - Birthday banner. - Small amount of boat-safe decor. - Avoid
 anything that creates major setup/cleanup.
 
--   [ ] Ask Aaron what is permitted.
--   [ ] Decide decor after rules are confirmed.
+-   [x] Ask Aaron what is permitted.
+-   [ ] Decide simple decor within Aaron's approval.
 -   [ ] Assign purchaser.
 -   [ ] Assign setup helpers.
 -   [ ] Avoid loose items that can blow into the Bay.
@@ -402,7 +451,7 @@ requiring lots of equipment - Anything disrespectful to the
 boat/captain - Anything that dominates the two-hour cruise
 
 -   [ ] Decide whether to prepare **one optional activity**.
--   [ ] Ask Aaron if there are any restrictions relevant to games.
+-   [x] Ask Aaron if there are any restrictions relevant to games.
 
 ------------------------------------------------------------------------
 
@@ -433,8 +482,8 @@ party supplies
 **Do not stack the cake somewhere unstable.**
 
 -   [ ] Borrow brother's cart.
--   [ ] Decide who is driving supplies.
--   [ ] Identify parking/loading location.
+-   [x] Gio drives the supplies.
+-   [x] Identify parking plan for Gio's supply car: Pier 39 Garage.
 -   [ ] Determine whether someone can temporarily unload close to the
     dock.
 -   [ ] Assign who physically moves supplies.
@@ -446,7 +495,7 @@ party supplies
 -   [ ] Determine whether rideshare should be recommended.
 -   [ ] Add concise transportation instructions to Partiful.
 -   [ ] Encourage enough buffer to be physically at the meeting point by
-    11:30.
+    11:45.
 
 ------------------------------------------------------------------------
 
@@ -497,7 +546,8 @@ end, MC/helper can casually announce: - gather personal belongings -
 dispose of trash - help with a quick cleanup - Helper crew performs
 final sweep.
 
--   [ ] Confirm boat trash/recycling setup with Aaron.
+-   [x] Confirm boat trash/recycling setup with Aaron; specific setup was
+    not discussed, so bring bags and leave the boat clean.
 -   [ ] Buy/bring trash bags.
 -   [ ] Assign final sweep helpers.
 -   [ ] Remove all decorations.
@@ -535,7 +585,9 @@ guidance.
 
 **Partiful is the single guest communication channel.**
 
-Do not send the major update until key dependencies are confirmed.
+Aaron's critical logistics are resolved. Send the major update after
+the remaining payment, meetup, transportation, and after-party details
+are ready.
 
 ## Main Update - Target: End of This Week
 
@@ -544,13 +596,15 @@ Should include:
 -   🎉 Boat is officially booked.
 -   **Saturday, October 3**
 -   **Cruise: 12:00-2:00 PM**
--   **Official meetup: 11:30 AM**
--   **Location: 272 Jefferson Street, Fisherman's Wharf**
--   Boarding timing once Aaron confirms it.
+-   **Official arrival / ready to board: 11:45 AM**
+-   **Location: Bass Tub, 276 Jefferson Street, Berth #4, Fisherman's
+    Wharf**
+-   Boarding readiness: **11:45 AM**.
 -   Boat leaves on time / don't be late.
 -   Optional **11:00 AM early-bird meetup** at \[TBD\].
 -   Suggested **\$20 contribution** + payment instructions.
--   Food/drink/BYOB details once confirmed.
+-   Food/drink/BYOB details; outside food and BYOB are allowed.
+-   Brief rule: no cannabis or other drugs are allowed onboard.
 -   Clothing: layers, comfortable shoes, sunglasses.
 -   Transportation/parking recommendation.
 -   After-party if selected.
@@ -615,6 +669,7 @@ Quantities TBD.
 ## Before Leaving Home
 
 -   [ ] Check weather.
+-   [ ] Check with Aaron about ice; bring ice if it is not provided.
 -   [ ] Confirm Aaron/day-of contact.
 -   [ ] Charge phones.
 -   [ ] Charge backup speaker.
@@ -638,7 +693,7 @@ Quantities TBD.
 -   [ ] Set up drinks/food as permitted.
 -   [ ] Helpers know their roles.
 -   [ ] Guest contact monitors arrivals.
--   [ ] Guests gathered by 11:30.
+-   [ ] Guests gathered and ready to board by 11:45.
 -   [ ] Boarding begins when Aaron allows.
 -   [ ] Make sure CayCay is enjoying herself - not doing logistics.
 
@@ -667,26 +722,24 @@ Quantities TBD.
 
 These are the remaining planning decisions, not forgotten tasks.
 
-1.  **Aaron answers / boat rules**
-2.  **Exact boarding time**
-3.  **11:00 AM early-bird location**
-4.  **After-party**
-5.  **Food quantities**
-6.  **Drink quantities**
-7.  **Cooler availability**
-8.  **Playlist owner**
-9.  **Speaker setup**
-10. **Decor**
-11. **Cake + cake owner**
-12. **MC: Sam or Kira**
-13. **Day-of guest contact**
-14. **Photo/video lead**
-15. **Supply purchaser(s)**
-16. **Supply driver/transport**
-17. **Parking/rideshare instructions**
-18. **Payment timing + CayCay Venmo**
-19. **Optional boat activity**
-20. **Final Partiful wording**
+1.  **11:00 AM early-bird location**
+2.  **After-party**
+3.  **Food quantities**
+4.  **Drink quantities**
+5.  **Playlist owner**
+6.  **Simple decor selection**
+7.  **Cake + cake owner**
+8.  **MC: Sam or Kira**
+9.  **Day-of guest contact**
+10. **Photo/video lead**
+11. **Supply purchaser(s)**
+12. **Supply driver/transport and unloading**
+13. **Parking/rideshare instructions**
+14. **Payment timing + CayCay Venmo**
+15. **Optional boat activity**
+16. **Final Partiful wording**
+17. **Morning-of ice check with Aaron**
+18. **Day-of candle/open-flame permission**
 
 ------------------------------------------------------------------------
 
@@ -713,7 +766,7 @@ Each task should support:
 3.  **Event Snapshot**
 4.  **Task Board**
 5.  **Timeline**
-6.  **Waiting on Aaron**
+6.  **Aaron / Boat Resolutions**
 7.  **People & Roles**
 8.  **Guest Communication**
 9.  **Food & Drinks**

@@ -16,7 +16,7 @@ export function CommunicationsPage() {
   const { plan: logistics } = useLogisticsPlan()
   const { answerFor } = useBoatQuestionAnswers()
   const detail = (id: string) => communications.details[id]?.trim() ?? ''
-  const boardingQuestions = boatQuestions.filter((question) => /guests begin boarding|dock by 11:30|depart exactly|after departure/i.test(question.title))
+  const boardingQuestions = boatQuestions.filter((question) => /guests begin boarding|dock by 11:45|depart exactly|after departure/i.test(question.title))
   const boardingAnswersComplete = boardingQuestions.every((question) => answerFor(question.id).status === 'Answered')
   const foodQuestions = boatQuestions.filter((question) => /outside food|BYOB|beer allowed|Prosecco|hard liquor|glass bottles|alcohol containers/i.test(question.title))
   const foodRulesComplete = foodQuestions.every((question) => answerFor(question.id).status === 'Answered')
@@ -42,7 +42,7 @@ export function CommunicationsPage() {
     '',
     `Saturday, October 3, 2026`,
     `Cruise: ${eventDetails.cruiseTime}`,
-    `Location: 272 Jefferson Street, Fisherman’s Wharf`,
+    `Location: Bass Tub — 276 Jefferson Street, Berth #4, Fisherman’s Wharf`,
     boardingAnswersComplete ? `Official meetup: ${eventDetails.meetupTime}` : '',
     boardingTime ? `Boarding: ${boardingTime}` : '',
     boardingAnswersComplete ? 'Please arrive with plenty of buffer—the boat leaves on time, and late arrival risks missing it.' : '',
@@ -50,6 +50,7 @@ export function CommunicationsPage() {
     '',
     `$${eventDetails.cost.suggestedContribution} suggested contribution. ${detail('payment')}`.trim(),
     foodRulesComplete ? detail('food-byob') : '',
+    'FYI: The boat does not allow cannabis or other drugs onboard.',
     '',
     'What to wear: Dress in layers, wear comfortable boat-friendly shoes, and bring sunglasses.',
     transportation ? `Transportation: ${transportation}` : '',
@@ -67,12 +68,12 @@ export function CommunicationsPage() {
   const reminderGenerated = [
     '⛵ Tomorrow: CayCay’s birthday boat party!', '',
     boardingAnswersComplete ? `Arrive: ${eventDetails.meetupTime}` : '',
-    `Meet: 272 Jefferson Street, Fisherman’s Wharf`,
+    `Meet: Bass Tub — 276 Jefferson Street, Berth #4, Fisherman’s Wharf`,
     boardingTime ? `Boarding: ${boardingTime}` : '',
     boardingAnswersComplete ? 'The cruise begins at 12:00 PM—please leave extra time so you do not miss the boat.' : '',
     detail('weather') ? `Weather: ${detail('weather')}` : '',
     'Bring: Layers, comfortable boat-friendly shoes, and sunglasses.',
-    foodRulesComplete ? detail('food-byob') : '', transportation ? `Transportation: ${transportation}` : '',
+    foodRulesComplete ? detail('food-byob') : '', 'No cannabis or other drugs are allowed onboard.', transportation ? `Transportation: ${transportation}` : '',
     dayOfContact ? `Day-of contact: ${dayOfContact}` : '', afterParty ? `After-party: ${afterParty}` : '',
   ].filter(Boolean).join('\n').trim()
 

@@ -9,11 +9,12 @@ interface LogisticsPlan {
   afterPartyLocation: string
 }
 
-const storageKey = 'caycay-party-logistics'
-const emptyPlan: LogisticsPlan = { values: {}, confirmedBoarding: false, transportReady: {}, dayOfGuestContact: '', afterPartyLocation: '' }
+const storageKey = 'caycay-party-logistics-v3'
+const emptyPlan: LogisticsPlan = { values: { 'boarding-time': '11:45 AM', unloading: 'Cart supplies to Berth #4; exact dock access / early boarding not promised', 'supply-driver': 'Gio' }, confirmedBoarding: true, transportReady: {}, dayOfGuestContact: 'Aaron', afterPartyLocation: '' }
 
 function loadPlan(): LogisticsPlan {
-  return { ...emptyPlan, ...loadLocal<LogisticsPlan>(storageKey, emptyPlan) }
+  const stored = loadLocal<LogisticsPlan>(storageKey, emptyPlan)
+  return { ...emptyPlan, ...stored, values: { ...emptyPlan.values, ...stored.values } }
 }
 
 export function useLogisticsPlan() {

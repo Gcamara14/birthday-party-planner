@@ -22,6 +22,7 @@ const phases: Array<Omit<PartyDayPhase, 'items'> & { items: PartyDayItemDefiniti
   {
     id: 'before-leaving', title: 'Before leaving', timeHint: 'At home', items: [
       { id: 'weather', label: 'Check weather', taskPrefixes: ['Check weather.'] },
+      { id: 'ice-check', label: 'Check with Aaron about ice', taskPrefixes: ['Check with Aaron about ice'] },
       { id: 'aaron-confirmation', label: 'Confirm Aaron / day-of contact', taskPrefixes: ['Confirm Aaron/day-of contact'] },
       { id: 'phones', label: 'Phones charged', taskPrefixes: ['Charge phones.'] },
       { id: 'speaker', label: 'Speaker charged', taskPrefixes: ['Charge backup speaker'] },
@@ -37,14 +38,14 @@ const phases: Array<Omit<PartyDayPhase, 'items'> & { items: PartyDayItemDefiniti
     ],
   },
   {
-    id: 'wharf', title: "At Fisherman's Wharf", timeHint: 'Before 11:30 AM', items: [
+    id: 'wharf', title: "At Fisherman's Wharf", timeHint: 'Guests ready by 11:45 AM', items: [
       { id: 'crew-arrival', label: 'Helper crew arrives first', taskPrefixes: ['Host/helper crew arrives first'] },
       { id: 'contact-aaron', label: 'Contact Aaron', taskPrefixes: ['Contact Aaron.'] },
       { id: 'unload', label: 'Unload supplies', taskPrefixes: ['Unload supplies.'] },
       { id: 'setup', label: 'Set up decor, food, and drinks', taskPrefixes: ['Setup allowed decorations', 'Set up drinks/food'] },
       { id: 'helper-roles', label: 'Helpers know their roles', taskPrefixes: ['Helpers know their roles'] },
       { id: 'arrival-monitor', label: 'Guest contact monitors arrivals', taskPrefixes: ['Guest contact monitors arrivals'] },
-      { id: 'meetup', label: 'Guests gathered by 11:30', taskPrefixes: ['Guests gathered by 11:30'] },
+      { id: 'meetup', label: 'Guests gathered by 11:45', taskPrefixes: ['Guests gathered and ready to board by 11:45'] },
       { id: 'boarding', label: 'Board when Aaron allows', taskPrefixes: ['Boarding begins when Aaron allows'] },
     ],
   },

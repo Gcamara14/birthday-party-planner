@@ -29,12 +29,12 @@ export function TimelinePage() {
         <p>Work from the top down. Each milestone is built from the same tasks and statuses as the task board.</p>
       </div>
 
-      <aside className="critical-path" aria-labelledby="critical-path-title">
+      <aside className="critical-path resolved-path" aria-labelledby="critical-path-title">
         <span className="critical-path-icon" aria-hidden="true">!</span>
         <div>
-          <p className="eyebrow">Important dependency</p>
-          <h2 id="critical-path-title">Aaron's answers unlock guest communication</h2>
-          <p>Confirm arrival, boarding, and boat rules before finalizing the main Partiful update.</p>
+          <p className="eyebrow">Dependency resolved</p>
+          <h2 id="critical-path-title">Aaron logistics are no longer blocking the plan</h2>
+          <p>Move next to Partiful details, helper roles, cake, quantities, decor, music, and the after-party.</p>
         </div>
       </aside>
 

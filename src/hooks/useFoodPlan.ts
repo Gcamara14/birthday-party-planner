@@ -7,10 +7,11 @@ interface FoodPlanState {
 }
 
 const storageKey = 'caycay-party-food-plan'
-const emptyPlan: FoodPlanState = { values: {}, purchased: {} }
+const emptyPlan: FoodPlanState = { values: { pizzas: '4' }, purchased: {} }
 
 function loadPlan(): FoodPlanState {
-  return { ...emptyPlan, ...loadLocal<FoodPlanState>(storageKey, emptyPlan) }
+  const stored = loadLocal<FoodPlanState>(storageKey, emptyPlan)
+  return { ...emptyPlan, ...stored, values: { ...emptyPlan.values, ...stored.values }, purchased: { ...emptyPlan.purchased, ...stored.purchased } }
 }
 
 export function useFoodPlan() {

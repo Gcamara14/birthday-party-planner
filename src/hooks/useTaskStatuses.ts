@@ -7,7 +7,9 @@ type StatusMap = Record<string, TaskStatus>
 const storageKey = 'caycay-party-task-statuses'
 
 function loadStatuses(): StatusMap {
-  return loadLocal<StatusMap>(storageKey, {})
+  const stored = loadLocal<StatusMap>(storageKey, {})
+  allTasks.filter((task) => task.status === 'Done').forEach((task) => delete stored[task.id])
+  return stored
 }
 
 export function useTaskStatuses() {

@@ -5,7 +5,7 @@ export const navigationItems: NavigationItem[] = [
   { id: 'tasks', label: 'Task board', shortLabel: 'Tasks', description: 'Track status, owners, and blockers', phase: 'available', showOnMobile: true, group: 'Focus' },
   { id: 'timeline', label: 'Timeline', shortLabel: 'Timeline', description: 'See work by deadline', phase: 'available', group: 'Focus' },
   { id: 'plan', label: 'Planning guide', shortLabel: 'Plan', description: 'Choose the right planning workspace', phase: 'available', showOnMobile: true, group: 'Plan' },
-  { id: 'aaron', label: 'Aaron / Boat', shortLabel: 'Aaron', description: 'Resolve boat questions first', phase: 'available', group: 'Plan' },
+  { id: 'aaron', label: 'Aaron / Boat', shortLabel: 'Aaron', description: 'Review resolved rules and day-of caveats', phase: 'available', group: 'Plan' },
   { id: 'people', label: 'People & roles', shortLabel: 'People', description: 'Delegate day-of responsibilities', phase: 'available', group: 'Plan' },
   { id: 'logistics', label: 'Logistics & transport', shortLabel: 'Logistics', description: 'Plan arrival and move supplies', phase: 'available', group: 'Plan' },
   { id: 'food', label: 'Food & drinks', shortLabel: 'Food', description: 'Decide quantities after boat rules', phase: 'available', group: 'Plan' },
