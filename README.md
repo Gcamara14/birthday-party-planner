@@ -49,8 +49,8 @@ When a dashboard is implemented, this document should remain the canonical plann
 - Prepare the Partiful update using the resolved 11:45 arrival and boat rules.
 - Assign lightweight helper roles for guest coordination, the birthday moment, photos, setup, and cleanup.
 - Finalize the cake, food and drink quantities, simple decor, and playlist.
-- Choose the early meetup and after-party locations.
-- Confirm payment, guest parking/rideshare guidance, exact dock access, and unloading details. Gio's supply-car plan is Pier 39 Garage plus the folding cart.
+- Choose the after-party location; no formal pre-boat meetup is needed.
+- Confirm payment, rideshare guidance, exact dock access, and unloading details. Pier 39 Garage is a convenient parking option and Gio's supply-car base.
 
 ## Task model
 

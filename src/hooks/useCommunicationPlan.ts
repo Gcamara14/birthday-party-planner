@@ -6,7 +6,7 @@ interface CommunicationPlan {
   drafts: Record<string, string>
 }
 
-const storageKey = 'caycay-party-communications-v3'
+const storageKey = 'caycay-party-communications-v4'
 const emptyPlan: CommunicationPlan = {
   details: { 'food-byob': 'Outside food and BYOB are allowed. Hosts plan to provide pizza, beer, Prosecco, water, and non-alcoholic options.' },
   drafts: {},

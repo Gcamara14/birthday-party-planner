@@ -70,9 +70,11 @@ Garage**, then use Gio's brother's folding cart for the roughly
 **7-minute / 0.3-mile walk** to the boat. This garage is Gio's practical
 supply plan, not yet a blanket parking recommendation for guests.
 
-**11:00 AM - Optional early meetup** - Other early birds can meet at a nearby
-bar/spot for a quick drink and hangout. - This is **optional**, not the
-official arrival location. - **TODO:** Choose nearby pre-boat spot.
+**11:00-11:30 AM - No formal guest meetup** - This window belongs to
+Gio and the helpers for parking, moving supplies, and getting organized.
+Early guests can explore Fisherman's Wharf or grab food nearby on their
+own, then meet everyone at the boat at 11:45. Do not create another
+official gathering point or transition for the hosts to manage.
 
 **\~11:10-11:30 AM - Supply move / host arrival** - Bring pizza, drinks,
 cake, decor, and other supplies to **Bass Tub, Berth #4**. Aaron has not
@@ -112,7 +114,8 @@ the boat.
 ### By End of This Week
 
 -   [x] Receive/confirm Aaron's answers.
--   [ ] Choose optional 11:00 AM pre-boat meetup spot.
+-   [x] Remove the optional 11:00 AM pre-boat meetup; early birds are on
+    their own until the single official 11:45 AM boat meetup.
 -   [ ] Send **one clean Partiful update** with confirmed logistics.
 -   [ ] Make clear that space is limited and guests should update their
     RSVP if they cannot attend.
@@ -180,8 +183,9 @@ as blockers.
     Street, Berth #4**.
 -   **Unloading:** Cart supplies to Berth #4. Exact dock access and early
     boarding were not promised; coordinate with Aaron upon arrival.
--   **Parking:** Gio plans to use Pier 39 Garage for the supply car. Guest
-    garage/pricing guidance still needs separate research.
+-   **Parking:** Pier 39 Garage is a convenient option about a 7-minute
+    walk from the boat. It remains Gio's logistics base for the supply
+    car and may be shared as an option—not a requirement—with guests.
 -   **USCG rule:** No drugs of any kind, including cannabis, are allowed
     onboard. Include this briefly in guest communication.
 
@@ -491,7 +495,8 @@ party supplies
 
 ## Guest Transportation
 
--   [ ] Research nearby parking/garage options.
+-   [x] Record Pier 39 Garage as a convenient guest option about a
+    7-minute walk away; do not present it as required parking.
 -   [ ] Determine whether rideshare should be recommended.
 -   [ ] Add concise transportation instructions to Partiful.
 -   [ ] Encourage enough buffer to be physically at the meeting point by
@@ -585,9 +590,9 @@ guidance.
 
 **Partiful is the single guest communication channel.**
 
-Aaron's critical logistics are resolved. Send the major update after
-the remaining payment, meetup, transportation, and after-party details
-are ready.
+Aaron's critical logistics are resolved. There is no formal early-bird
+meetup to choose. Send the major update after the remaining payment,
+transportation, and after-party details are ready.
 
 ## Main Update - Target: End of This Week
 
@@ -601,7 +606,8 @@ Should include:
     Wharf**
 -   Boarding readiness: **11:45 AM**.
 -   Boat leaves on time / don't be late.
--   Optional **11:00 AM early-bird meetup** at \[TBD\].
+-   Early-bird guidance: explore Fisherman's Wharf or grab a bite nearby
+    independently, then meet everyone at the boat at 11:45 AM.
 -   Suggested **\$20 contribution** + payment instructions.
 -   Food/drink/BYOB details; outside food and BYOB are allowed.
 -   Brief rule: no cannabis or other drugs are allowed onboard.
@@ -722,22 +728,21 @@ Quantities TBD.
 
 These are the remaining planning decisions, not forgotten tasks.
 
-1.  **11:00 AM early-bird location**
-2.  **After-party**
-3.  **Food quantities**
-4.  **Drink quantities**
-5.  **Playlist owner**
-6.  **Simple decor selection**
-7.  **Cake + cake owner**
-8.  **MC: Sam or Kira**
-9.  **Day-of guest contact**
-10. **Photo/video lead**
-11. **Supply purchaser(s)**
-12. **Supply driver/transport and unloading**
-13. **Parking/rideshare instructions**
-14. **Payment timing + CayCay Venmo**
-15. **Optional boat activity**
-16. **Final Partiful wording**
+1.  **After-party**
+2.  **Food quantities**
+3.  **Drink quantities**
+4.  **Playlist owner**
+5.  **Simple decor selection**
+6.  **Cake + cake owner**
+7.  **MC: Sam or Kira**
+8.  **Day-of guest contact**
+9.  **Photo/video lead**
+10. **Supply purchaser(s)**
+11. **Supply driver/transport and unloading**
+12. **Rideshare instructions**
+13. **Payment timing + CayCay Venmo**
+14. **Optional boat activity**
+15. **Final Partiful wording**
 17. **Morning-of ice check with Aaron**
 18. **Day-of candle/open-flame permission**
 

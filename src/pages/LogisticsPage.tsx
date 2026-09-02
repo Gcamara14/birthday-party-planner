@@ -23,7 +23,7 @@ export function LogisticsPage() {
           ))}
         </ol>
         <aside className="boarding-confirmed"><strong>11:45 AM is the operational deadline</strong><p>Guests should arrive ready to board. Do not plan around late-arrival accommodations.</p></aside>
-        <aside className="boarding-confirmed"><strong>Exact destination: Bass Tub · Berth #4</strong><p>276 Jefferson Street, Fisherman’s Wharf. Gio’s Pier 39 Garage plan is for the supply car; guest parking guidance still needs comparison.</p></aside>
+        <aside className="boarding-confirmed"><strong>One official guest meetup</strong><p>Bass Tub · 276 Jefferson Street · Berth #4 at 11:45 AM. Early birds can explore Fisherman’s Wharf independently; there is no separate meetup for the hosts to manage.</p></aside>
       </section>
 
       <section className="supply-section" aria-labelledby="boat-layout-title">

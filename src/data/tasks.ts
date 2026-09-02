@@ -20,7 +20,7 @@ const GROUP_NAMES: Record<string, string> = {
 
 const NEXT_ACTION_TITLES = [
   'Email/text/call Aaron', 'Talk through this master plan', 'Confirm which details must be known',
-  "Receive/confirm Aaron's answers", 'Choose optional 11:00 AM', 'Send one clean Partiful update',
+  "Receive/confirm Aaron's answers", 'Send one clean Partiful update',
   'Make clear that space is limited',
 ]
 
@@ -70,10 +70,9 @@ function parseSourceTasks(markdown: string): SourceTask[] {
   return tasks
 }
 
-// The PRD contains two prose TODOs and seven escaped inline checkboxes that are
+// The PRD contains one prose TODO and seven escaped inline checkboxes that are
 // not valid Markdown list items. Keep them traceable here until the PRD is reformatted.
 const inlineSourceTasks: SourceTask[] = [
-  { title: 'Choose nearby pre-boat spot', details: [], section: '2. Guest Arrival Plan', subsection: 'Arrival Plan', sourceLine: 74, checked: false },
   { title: 'Finalize late-guest wording', details: [], section: '2. Guest Arrival Plan', subsection: 'Late Guests', sourceLine: 93, checked: false },
   { title: 'Choose Sam or Kira as primary informal MC', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 255, checked: false },
   { title: 'Choose backup MC', details: [], section: '5. People & Responsibilities', subsection: 'Helper Crew', sourceLine: 255, checked: false },
@@ -114,7 +113,7 @@ function getOwner(task: SourceTask): TaskOwner | undefined {
 function getPriority(task: SourceTask): TaskPriority {
   if (task.section.startsWith('4.')) return 'Critical'
   if (NEXT_ACTION_TITLES.some((title) => task.title.startsWith(title))) {
-    return task.title.includes('Talk through') || task.title.includes('early meetup') ? 'High' : 'Critical'
+    return task.title.includes('Talk through') ? 'High' : 'Critical'
   }
   if (/confirm|boarding|departure|guest contact|capacity|cleanup plan|payment process/i.test(task.title)) return 'High'
   if (/optional|if any|if useful|if needed|if necessary|vibe calls/i.test(task.title)) return 'Nice-to-have'

@@ -34,7 +34,7 @@ function recordedResolution(title: string): string {
   if (/phone number/i.test(title)) return 'Aaron is the day-of contact.'
   if (/meeting\/boarding landmark/i.test(title)) return 'Bass Tub, 276 Jefferson Street, Berth #4, Fisherman’s Wharf.'
   if (/unload|loading/i.test(title)) return 'Use the folding cart to bring supplies to Berth #4. Exact dock access and early boarding were not promised; coordinate with Aaron on arrival.'
-  if (/parking/i.test(title)) return 'Gio plans to use Pier 39 Garage for the supply car. Guest garage/pricing guidance still needs separate research.'
+  if (/parking/i.test(title)) return 'Pier 39 Garage is a convenient option about a 7-minute walk from the boat. It is Gio’s supply-car base and may be shared with guests as an option, not a requirement.'
   if (/guest message/i.test(title)) return 'No additional Aaron instructions are needed before drafting the guest message.'
   return 'Resolved for current planning; no additional Aaron follow-up is required.'
 }

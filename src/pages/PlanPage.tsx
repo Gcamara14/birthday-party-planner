@@ -1,9 +1,9 @@
 const workspaces = [
-  { step: '1', route: 'communications', title: 'Prepare the Partiful update', when: 'Work here now', description: 'Aaron logistics are resolved. Fill the remaining payment, meetup, transportation, and after-party gaps.' },
+  { step: '1', route: 'communications', title: 'Prepare the Partiful update', when: 'Work here now', description: 'Aaron logistics and the single 11:45 meetup are resolved. Fill the remaining payment, rideshare, and after-party gaps.' },
   { step: '2', route: 'people', title: 'Delegate the work', when: 'Next', description: 'Confirm light, specific roles so Gio and CayCay are not handling every day-of question.' },
   { step: '3', route: 'experience', title: 'Confirm cake, decor, and music', when: 'After roles', description: 'Choose the cake owner, simple decorations, playlist owner, and birthday-moment support.' },
   { step: '4', route: 'food', title: 'Choose food and drink quantities', when: 'With RSVP clarity', description: 'Boat rules are resolved. Decide pizza, drinks, ice, cups, and other quantities.' },
-  { step: '5', route: 'logistics', title: 'Finish locations and transport', when: 'Alongside the above', description: 'Choose the optional meetup, parking guidance, supply driver, unloading plan, and after-party.' },
+  { step: '5', route: 'logistics', title: 'Finish transport details', when: 'Alongside the above', description: 'The meetup and parking option are set. Finish rideshare guidance, dock access, and the after-party.' },
   { step: '6', route: 'shopping', title: 'Shop and pack', when: 'After quantities are decided', description: 'Track what is needed, purchased, owned, and packed.' },
 ]
 

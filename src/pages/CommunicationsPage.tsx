@@ -21,7 +21,6 @@ export function CommunicationsPage() {
   const foodQuestions = boatQuestions.filter((question) => /outside food|BYOB|beer allowed|Prosecco|hard liquor|glass bottles|alcohol containers/i.test(question.title))
   const foodRulesComplete = foodQuestions.every((question) => answerFor(question.id).status === 'Answered')
   const boardingTime = logistics.confirmedBoarding ? logistics.values['boarding-time']?.trim() : ''
-  const earlyMeetup = logistics.values['early-meetup']?.trim() ?? ''
   const parking = logistics.values.parking?.trim() ?? ''
   const rideshare = logistics.values.rideshare?.trim() ?? ''
   const transportation = [parking, rideshare].filter(Boolean).join(' ')
@@ -30,7 +29,6 @@ export function CommunicationsPage() {
 
   const mainMissing = [
     !boardingAnswersComplete || !boardingTime ? 'Confirmed boarding information from Aaron' : '',
-    !earlyMeetup ? 'Optional 11:00 AM early-meetup location' : '',
     !detail('payment') ? 'Payment instructions' : '',
     !foodRulesComplete || !detail('food-byob') ? 'Confirmed food / BYOB wording' : '',
     !transportation ? 'Parking or rideshare recommendation' : '',
@@ -42,18 +40,19 @@ export function CommunicationsPage() {
     '',
     `Saturday, October 3, 2026`,
     `Cruise: ${eventDetails.cruiseTime}`,
-    `Location: Bass Tub — 276 Jefferson Street, Berth #4, Fisherman’s Wharf`,
-    boardingAnswersComplete ? `Official meetup: ${eventDetails.meetupTime}` : '',
-    boardingTime ? `Boarding: ${boardingTime}` : '',
-    boardingAnswersComplete ? 'Please arrive with plenty of buffer—the boat leaves on time, and late arrival risks missing it.' : '',
-    earlyMeetup ? `Optional early-bird meetup at 11:00 AM: ${earlyMeetup}` : '',
+    `⛵ Boat: Bass Tub — 276 Jefferson Street, Berth #4, Fisherman’s Wharf`,
+    boardingAnswersComplete ? `Meet at ${eventDetails.meetupTime}.` : '',
+    boardingTime ? `Be ready to board at ${boardingTime}.` : '',
+    boardingAnswersComplete ? 'Please be on time since we head out at noon!' : '',
+    '',
+    '🌉 Early birds: If you’re in the area early, feel free to hang around Fisherman’s Wharf or grab a bite nearby. We’ll meet everyone at the boat at 11:45 AM!',
     '',
     `$${eventDetails.cost.suggestedContribution} suggested contribution. ${detail('payment')}`.trim(),
     foodRulesComplete ? detail('food-byob') : '',
     'FYI: The boat does not allow cannabis or other drugs onboard.',
     '',
     'What to wear: Dress in layers, wear comfortable boat-friendly shoes, and bring sunglasses.',
-    transportation ? `Transportation: ${transportation}` : '',
+    transportation ? `🚗 Parking / transportation: ${transportation}` : '',
     afterParty ? `After-party: ${afterParty}` : '',
     '',
     `Space is limited to ${eventDetails.guestLimit} guests. If you can no longer attend, please update your Partiful RSVP so the spot can go to someone else.`,

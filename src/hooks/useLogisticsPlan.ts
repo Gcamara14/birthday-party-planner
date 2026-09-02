@@ -9,8 +9,8 @@ interface LogisticsPlan {
   afterPartyLocation: string
 }
 
-const storageKey = 'caycay-party-logistics-v3'
-const emptyPlan: LogisticsPlan = { values: { 'boarding-time': '11:45 AM', unloading: 'Cart supplies to Berth #4; exact dock access / early boarding not promised', 'supply-driver': 'Gio' }, confirmedBoarding: true, transportReady: {}, dayOfGuestContact: 'Aaron', afterPartyLocation: '' }
+const storageKey = 'caycay-party-logistics-v4'
+const emptyPlan: LogisticsPlan = { values: { 'boarding-time': '11:45 AM', parking: 'Pier 39 Garage is a convenient option about a 7-minute walk from the boat.', unloading: 'Cart supplies to Berth #4; exact dock access / early boarding not promised', 'supply-driver': 'Gio' }, confirmedBoarding: true, transportReady: {}, dayOfGuestContact: 'Aaron', afterPartyLocation: '' }
 
 function loadPlan(): LogisticsPlan {
   const stored = loadLocal<LogisticsPlan>(storageKey, emptyPlan)
