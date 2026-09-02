@@ -1,5 +1,6 @@
 import type { PlanningTask, TaskStatus } from '../types/event'
 import { TaskStatusControl } from './TaskStatusControl'
+import { routeForTask } from '../data/navigation'
 
 interface TaskListItemProps {
   task: PlanningTask
@@ -8,6 +9,7 @@ interface TaskListItemProps {
 }
 
 export function TaskListItem({ task, status, onStatusChange }: TaskListItemProps) {
+  const workspaceRoute = routeForTask(task)
   return (
     <article className={`task-list-item ${status === 'Done' ? 'task-done' : ''}`}>
       <div className="task-list-main">
@@ -22,6 +24,7 @@ export function TaskListItem({ task, status, onStatusChange }: TaskListItemProps
           <div><dt>When</dt><dd>{task.dueLabel ?? 'Not specified'}</dd></div>
           <div><dt>Blocker</dt><dd>{task.dependency ?? 'None noted'}</dd></div>
         </dl>
+        {workspaceRoute !== 'tasks' && <a className="task-workspace-link" href={`#${workspaceRoute}`}>Open related workspace →</a>}
       </div>
       <TaskStatusControl taskTitle={task.title} value={status} onChange={(nextStatus) => onStatusChange(task.id, nextStatus)} />
     </article>

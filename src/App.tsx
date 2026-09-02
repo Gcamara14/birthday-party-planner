@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { AppHeader } from './components/AppHeader'
 import { Navigation } from './components/Navigation'
 import { navigationItems } from './data/navigation'
-import { FutureSectionPage } from './pages/FutureSectionPage'
 import { OverviewPage } from './pages/OverviewPage'
 import { TasksPage } from './pages/TasksPage'
 import { TimelinePage } from './pages/TimelinePage'
@@ -15,6 +14,7 @@ import { CommunicationsPage } from './pages/CommunicationsPage'
 import { ShoppingPage } from './pages/ShoppingPage'
 import { PartyDayPage } from './pages/PartyDayPage'
 import { ReadinessPage } from './pages/ReadinessPage'
+import { PlanPage } from './pages/PlanPage'
 
 function getRoute() {
   const route = window.location.hash.replace('#', '') || 'overview'
@@ -50,6 +50,7 @@ export default function App() {
           {activeRoute === 'overview' && <OverviewPage />}
           {activeRoute === 'tasks' && <TasksPage />}
           {activeRoute === 'timeline' && <TimelinePage />}
+          {activeRoute === 'plan' && <PlanPage />}
           {activeRoute === 'aaron' && <BoatQuestionsPage />}
           {activeRoute === 'people' && <PeoplePage />}
           {activeRoute === 'food' && <FoodPage />}
@@ -58,7 +59,6 @@ export default function App() {
           {activeRoute === 'communications' && <CommunicationsPage />}
           {activeRoute === 'shopping' && <ShoppingPage />}
           {activeRoute === 'readiness' && <ReadinessPage />}
-          {!['overview', 'tasks', 'timeline', 'aaron', 'people', 'food', 'experience', 'logistics', 'communications', 'shopping', 'party-day', 'readiness'].includes(activeRoute) && <FutureSectionPage sectionId={activeRoute} />}
         </main>
       </div>
       <footer>

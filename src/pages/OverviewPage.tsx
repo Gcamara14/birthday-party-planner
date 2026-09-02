@@ -1,8 +1,8 @@
 import { EventSnapshot } from '../components/EventSnapshot'
 import { SectionHeading } from '../components/SectionHeading'
-import { TaskCard } from '../components/TaskCard'
 import { eventDetails } from '../data/event'
 import { allTasks } from '../data/tasks'
+import { routeForTask } from '../data/navigation'
 import { useCountdown } from '../hooks/useCountdown'
 import { useTaskStatuses } from '../hooks/useTaskStatuses'
 
@@ -10,6 +10,7 @@ export function OverviewPage() {
   const countdown = useCountdown(eventDetails.dateTime)
   const { statusFor } = useTaskStatuses()
   const nextActions = allTasks.filter((task) => task.isNextAction && statusFor(task) !== 'Done').slice(0, 4)
+  const bestAction = nextActions[0]
   const allBlocked = allTasks.filter((task) => statusFor(task) === 'Waiting')
   const blocked = allBlocked.slice(0, 3)
   const deadlineGroups = [
@@ -47,9 +48,11 @@ export function OverviewPage() {
           />
           <a className="view-all-link" href="#tasks">View task board →</a>
         </div>
-        <div className="task-grid">
-          {nextActions.map((task) => <TaskCard task={task} status={statusFor(task)} key={task.id} />)}
-        </div>
+        {bestAction ? <div className="best-action">
+          <div><span className="best-action-label">Do this next</span><h3>{bestAction.title}</h3><p>{bestAction.notes ?? bestAction.dependency ?? 'Open the relevant workspace to move this forward.'}</p><dl><div><dt>Owner</dt><dd>{bestAction.owner ?? 'Unassigned'}</dd></div><div><dt>When</dt><dd>{bestAction.dueLabel ?? 'Not specified'}</dd></div></dl></div>
+          <a href={`#${routeForTask(bestAction)}`}>Open workspace →</a>
+        </div> : <div className="next-actions-clear"><span aria-hidden="true">✓</span><div><h3>Immediate actions complete</h3><p>Open the Timeline to see the next milestone.</p></div></div>}
+        {nextActions.length > 1 && <div className="next-queue"><p>Then</p><ol>{nextActions.slice(1).map((task) => <li key={task.id}><a href={`#${routeForTask(task)}`}><span>{task.title}</span><strong>{task.owner ?? 'Unassigned'} · {task.dueLabel ?? 'No timeframe'}</strong></a></li>)}</ol></div>}
       </section>
 
       <div className="home-signal-grid">

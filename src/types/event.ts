@@ -67,4 +67,5 @@ export interface NavigationItem {
   description: string
   phase: 'available' | 'future'
   showOnMobile?: boolean
+  group: 'Focus' | 'Plan' | 'Finish'
 }

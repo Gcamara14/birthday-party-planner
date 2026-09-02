@@ -9,7 +9,7 @@ const views: View[] = ['All', 'Next Actions', 'Waiting', 'In Progress', 'Done', 
 const priorityOrder = { Critical: 0, High: 1, Normal: 2, 'Nice-to-have': 3 }
 const ownerOptions: Array<TaskOwner | 'Unassigned'> = ['Gio', 'CayCay', 'Sam', 'Kira', 'Lynn', 'Other', 'Unassigned']
 export function TasksPage() {
-  const [view, setView] = useState<View>('All')
+  const [view, setView] = useState<View>('Next Actions')
   const [owner, setOwner] = useState<TaskOwner | 'Unassigned'>('Unassigned')
   const { statuses, statusFor, changeStatus } = useTaskStatuses()
 
@@ -37,6 +37,7 @@ export function TasksPage() {
         </div>
         <div className="task-total" aria-label={`${allTasks.length} total tasks`}><strong>{allTasks.length}</strong><span>Total tasks</span></div>
       </div>
+      <aside className="task-board-purpose"><strong>This is the source for task status.</strong><span>Use planning workspaces to record detailed decisions; return here to manage the full checklist.</span></aside>
 
       <div className="task-toolbar">
         <div className="view-tabs" role="group" aria-label="Task views">
