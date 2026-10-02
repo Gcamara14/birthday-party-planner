@@ -40,6 +40,15 @@ export function OverviewPage() {
         </div>
       </section>
 
+      <section className="best-action" aria-labelledby="friday-prep-title">
+        <div>
+          <span className="best-action-label">Friday · October 2 · Prep for tomorrow</span>
+          <h2 id="friday-prep-title">Friday Party Prep</h2>
+          <p>Buy supplies, confirm pickups, finish music, and stage everything for Saturday's boat party.</p>
+        </div>
+        <a href={`${import.meta.env.BASE_URL}caycay_friday_party_prep.html`}>Open prep checklist →</a>
+      </section>
+
       <section className="tasks-section home-priorities" aria-labelledby="tasks-title">
         <div className="tasks-heading-row">
           <SectionHeading
